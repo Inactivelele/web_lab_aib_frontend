@@ -1,10 +1,13 @@
 # HTTP HTTPS и их параметры 
-___________________________________________________
+_______________________________________________________________________________________
 ## Лабораторная работа №1
-## КГергель И. Н. АСБ-3-036
+## Гергель И. Н. АСБ-3-036
 
 Команда для получения информации о сайте: **curl -I -v https://code.visualstudio.com/**
+_______________________________________________________________________________________
+
 ### VSC
+
 ```shell
 > GET / HTTP/2
 > Host: code.visualstudio.com                                   - Значение хоста ресурса
@@ -77,6 +80,7 @@ HTTP/1.1 200 OK
 ```
 
 ### RZD (don`t works)
+
 ```shell
 > GET / HTTP/1.1
 > Host: www.rzd.ru
@@ -94,6 +98,7 @@ HTTP/1.1 200 OK
 ```
 
 ### Yandex (don`t works)
+
 ```shell
 > GET / HTTP/2
 > Host: yandex.ru
@@ -125,6 +130,7 @@ HTTP/1.1 200 OK
 ```
 
 ### Python
+
 ```shell
 > GET / HTTP/2
 > Host: www.python.org
@@ -150,6 +156,7 @@ HTTP/1.1 200 OK
 ```
 
 ### Saint git
+
 ```shell
 > GET / HTTP/2
 > Host: git-scm.com
@@ -180,6 +187,7 @@ HTTP/1.1 200 OK
 ```
 
 ### Jetbrains
+
 ```shell
 < HTTP/2 200 
 < content-type: text/html; charset=utf-8
