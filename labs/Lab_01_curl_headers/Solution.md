@@ -1,5 +1,10 @@
+# HTTP HTTPS и их параметры 
+___________________________________________________
+## Лабораторная работа №1
+## КГергель И. Н. АСБ-3-036
 
-## VSC
+Команда для получения информации о сайте: **curl -I -v https://code.visualstudio.com/**
+### VSC
 ```shell
 > GET / HTTP/2
 > Host: code.visualstudio.com                                   - Значение хоста ресурса
@@ -71,7 +76,7 @@ HTTP/1.1 200 OK
  X-XSS-Protection: 0
 ```
 
-## RZD (don`t works)
+### RZD (don`t works)
 ```shell
 > GET / HTTP/1.1
 > Host: www.rzd.ru
@@ -88,7 +93,7 @@ HTTP/1.1 200 OK
 * TLSv1.2 (OUT), TLS alert, close notify (256):
 ```
 
-# Yandex (don`t works)
+### Yandex (don`t works)
 ```shell
 > GET / HTTP/2
 > Host: yandex.ru
@@ -119,7 +124,7 @@ HTTP/1.1 200 OK
 * Connection #0 to host yandex.ru left intact
 ```
 
-## Python
+### Python
 ```shell
 > GET / HTTP/2
 > Host: www.python.org
@@ -144,7 +149,7 @@ HTTP/1.1 200 OK
 < content-length: 50214
 ```
 
-## Saint git
+### Saint git
 ```shell
 > GET / HTTP/2
 > Host: git-scm.com
@@ -174,7 +179,7 @@ HTTP/1.1 200 OK
 < cf-ray: 806723280e154c84-HEL
 ```
 
-## Jetbrains
+### Jetbrains
 ```shell
 < HTTP/2 200 
 < content-type: text/html; charset=utf-8
