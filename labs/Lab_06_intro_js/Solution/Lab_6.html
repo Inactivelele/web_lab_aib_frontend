@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        console.log("1 задание");
+        let apple = 10;
+        alert(apple);
+        console.log(apple);
+        let possibleConditions = ["Солнечно", "Облачно", "Дождь", "Снег", "Туман"];
+        let randomIndex = Math.floor(Math.random() * possibleConditions.length);
+        let condition = possibleConditions[randomIndex];
+        console.log("На улице сегодня "+ condition);
+
+        console.log("\n2 задание");
+        let int = 30;
+        let str = "100";
+        let bool = true;
+        console.log(int+str);
+        console.log(int+bool);
+        console.log(bool+str);
+        console.log(bool+int);
+        console.log(str+int);
+        console.log(str+bool);
+
+        console.log("\n3 задание");
+        let mas = [];
+        for (let i = 0; i < 10; i++){
+            let rand = Math.floor(Math.random() * 101) - 50;
+            mas.push(rand);
+        }
+        console.log(mas);
+        let filtrMas = mas.filter(function(c){
+            return c>=0;
+        });
+        console.log(filtrMas);
+
+        console.log("\n4 задание");
+        function GetFirstRandom(){
+            return Math.random();
+        }
+        let a = GetFirstRandom();
+        console.log(a);
+        let newArray = [1,2,3];
+        function MultiplyArray(mass, index){
+            return mass.map(function(element){
+                return element * index;
+            });
+        }
+
+        console.log(MultiplyArray(newArray, 2));
+        const generateRandomWord = () => {
+            const words = ["apple", "banana", "cherry", "date", "grape", "kiwi", "lemon", "mango", "orange", "peach", "pear", "strawberry", "watermelon"];
+            const randomIndex = Math.floor(Math.random() * words.length);
+            return words[randomIndex];
+        };
+        console.log(generateRandomWord());
+
+        console.log("\n5 задание");
+        // Создаем пустой объект
+        let person = {};
+        // Добавляем поля
+        person.firstName = "Иван";
+        person.surname = "Гергель";
+        person.patronymic = "Николаевич";
+        person.birthday = 2003;
+        person.hobby = "Ресторан: ОСАКА";
+        person.group = "АСБ-3-036";
+        // Метод, возвращающий ФИО, год рождения, хобби и возраст
+        person.getInfo = function() {
+            return `ФИО: ${this.surname} ${this.firstName} ${this.patronymic}\nГод рождения: ${this.birthday}\nХобби: ${this.hobby}\nВозраст: ${2023-this.birthday} лет`;
+        };
+        // Вызываем метод и выводим результат через alert
+        alert(person.getInfo());
+        // Создаем объект с зарплатами сотрудников
+        let salaries = {
+            "Сотрудник1": 10000,
+            "Сотрудник2": 60400,
+            "Сотрудник3": 55300,
+            "Сотрудник4": 10400,
+            "Сотрудник5": 35000,
+            "Сотрудник6": 48500,
+            "Сотрудник7": 41700,
+            "Сотрудник8": 44000,
+            "Сотрудник9": 84000,
+            "Сотрудник10": 27000,
+        };
+        // Вычисляем общую зарплату сотрудников
+        let totalSalary = 0;
+        for (let employee in salaries) {
+            totalSalary += salaries[employee];
+        }
+        
+        console.log(`Общая зарплата сотрудников: ${totalSalary}`);
+
+
+        
+    </script>
+</body>
+</html>

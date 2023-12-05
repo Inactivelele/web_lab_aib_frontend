@@ -1,0 +1,57 @@
+.main{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.input_cont{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.slider{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 300px;
+}
+
+.input{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.square{
+    padding:5%;
+}
+
+.block{
+    display: flex;
+    overflow-x: scroll;
+    width: 300px;
+    max-width: 300px;
+    height: 300px;
+    white-space: nowrap;
+}
+
+.block > div:not(:first-child){
+    display:none;
+}
+
+.arrow {
+    width: 30px;
+    height: 30px;
+    background-color: lightgray;
+    border-radius: 50%;
+    margin: 0 10px;
+    outline: none;
+    border: none;
+}
+
+.arrow:focus,
+.arrow:active {
+    background-color: gray;
+}
