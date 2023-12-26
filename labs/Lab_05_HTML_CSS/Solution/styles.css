@@ -1,0 +1,196 @@
+@media screen and (min-width: 320px) and (max-width: 640px) {
+.header
+{
+margin: 12px;
+justify-content: center;
+overflow: hidden;
+}
+
+body {
+  margin: 0 40px;
+  background: #161616;
+}
+
+a
+{
+text-decoration: underline;
+color: aliceblue;
+}	
+
+a:hover
+{
+text-decoration: none;
+color: aliceblue;
+}	
+
+.main-catalog
+{
+margin-left: 12px;
+margin-right: 12px;
+overflow: hidden;
+
+}
+
+.promo-catalog
+{
+display: grid;
+grid-template-columns: 48% 48%;
+grid-column-gap: 20px;
+overflow: hidden;
+}
+
+.item
+{
+
+opacity: 100%;
+
+}
+
+.item:hover
+{
+opacity: 60%;
+}
+
+img
+{
+width: 100%;
+height: auto;
+}
+
+p
+{
+max-width: 100%;
+font-size: calc(1em + 1vw);
+overflow-wrap: break-word;
+color: aliceblue;
+font-family: Impact, Haettenschweiler, sans-serif;
+text-align: center;
+}
+
+h1
+{
+font-size: calc(1em + 4vw);
+color: aliceblue;
+font-family: Impact, Haettenschweiler, sans-serif;
+text-align: center;
+}
+
+h2
+{
+font-size: calc(1em + 4vw);
+color: aliceblue;
+font-family: Impact, Haettenschweiler, sans-serif;
+text-align: center;
+}
+}
+
+nav {
+  margin-top: 0;
+  text-align: right;
+  color: aliceblue;
+}
+
+
+@media screen and (min-width: 641px) and (max-width: 3840px) 
+{
+  .header
+{
+margin: 40px;
+overflow: hidden;
+}
+
+body {
+  margin: 0 40px;
+  background: #161616;
+  overflow: auto;
+}
+
+.menu
+{
+position: relative;
+text-align: right;
+bottom: 140px;
+padding-top: 20px;
+}
+
+a
+{
+
+text-decoration: underline;
+color: aliceblue;
+}	
+
+a:hover
+{
+text-decoration: none;
+color: aliceblue;
+}	
+
+.main-catalog
+{
+margin-left: 40px;
+margin-right: 40px;
+display: grid;
+grid-column-gap: 24px;
+grid-template-columns: repeat(3, 33%);
+max-width: 100%;
+overflow: hidden;
+padding: 0px 40px;
+}
+
+.promo-catalog
+{
+max-width: 100%;
+display: grid;
+margin-left: 40px;
+margin-right: 40px;
+grid-column-gap: 20px;
+grid-template-columns: repeat(4,24%);
+max-width: 100%;
+overflow: hidden;
+padding: 0px 40px;
+}
+
+.item
+{
+
+opacity: 100%;
+
+}
+
+.item:hover
+{
+opacity: 60%;
+}
+
+img
+{
+max-width: 100%;
+height: auto;
+}
+
+p
+{
+max-width: 100%;
+font-size: calc(1em + 1vw);
+overflow-wrap: break-word;
+color: aliceblue;
+font-family: Impact, Haettenschweiler, sans-serif;
+}
+
+h1
+{
+font-size: calc(1em + 1vw);
+color: aliceblue;
+font-family: Impact, Haettenschweiler, sans-serif;
+text-align: center;
+}
+
+h2
+{
+font-size: calc(1em + 1vw);
+color: aliceblue;
+font-family: Impact, Haettenschweiler, sans-serif;
+text-align: center;
+}
+}
